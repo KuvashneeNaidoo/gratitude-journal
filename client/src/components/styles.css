@@ -1,0 +1,316 @@
+/* Affirmations Styling */
+.affirmations-container {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/background3.jpg"); /* Background image */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center center; /* Ensures the image is centered both horizontally and vertically */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh; /* Ensures the background covers the entire viewport height */
+}
+
+.affirmation-text {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.start-button,
+.next-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  max-width: 300px; /* Set a maximum width for the button */
+  width: auto; /* Allow the button width to adjust based on content */
+  text-align: center; /* Ensure the text is centered */
+}
+
+.start-button:hover,
+.next-button:hover {
+  background-color: #ff0088;
+}
+
+.congratulations-message {
+  font-size: 18px;
+  color: #333;
+}
+
+/* General container styling */
+.journal-container {
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-image: url("../assets/background3.jpg"); /* Background image */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center center; /* Ensures the image is centered both horizontally and vertically */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: auto; /* Allows the container to stretch based on content */
+  min-height: 100vh; /* Ensures it takes at least full viewport height */
+}
+
+/* Journal Form */
+.journal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.journal-form h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.journal-form textarea {
+  font-family: "Quicksand", sans-serif; /* Apply Quicksand font to the body */
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.journal-form textarea:focus {
+  border-color: #ff0088;
+}
+
+.journal-form button {
+  background-color: #ff0088;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.journal-form button:hover {
+  background-color: #ff0088;
+}
+
+/* Journal Entries */
+.entries-list {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the entries horizontally */
+}
+
+.entries-list ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%; /* Ensures the entries take up the full width available */
+  max-width: 600px; /* Restricts width to 600px */
+}
+
+.entries-list li {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  max-width: 600px; /* Limits the maximum width of each entry */
+  width: 100%; /* Ensures each entry expands within the max-width */
+}
+
+.entries-list button {
+  background-color: #ff0088; /* Pink button similar to affirmations */
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  align-self: center; /* Center button */
+  margin-top: 10px;
+  max-width: 200px; /* Set maximum width for button */
+  width: auto; /* Let the button adjust width based on content */
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.entries-list button:hover {
+  background-color: #ff0088; /* Hover effect for pink button */
+}
+
+.entries-list p {
+  color: #333;
+  font-size: 16px;
+}
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif; /* Apply Quicksand font to the body */
+  color: #333; /* Darker text color for better contrast */
+}
+
+/* General container style */
+.login-register-container {
+  font-family: "Quicksand", sans-serif; /* Apply Quicksand font to the body */
+  text-align: center;
+  padding: 50px;
+  background-image: url("../assets/background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form box styling */
+.form-box {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* White background with transparency */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow for better contrast */
+  width: 400px; /* Increased width to ensure input fields fit */
+  box-sizing: border-box; /* Includes padding and borders in width */
+}
+
+/* Heading styling (Login/Register titles) */
+h2 {
+  margin-bottom: 20px;
+  color: black; /* Pink color for the heading */
+  font-family: "Press Start 2P", cursive; /* Pixel font */
+  text-transform: uppercase; /* Optional: Makes the text uppercase */
+}
+
+/* Input and button styling */
+input[type="text"],
+input[type="password"],
+button {
+  font-family: "Quicksand", sans-serif; /* Apply Quicksand font to the body */
+  width: 80%; /* Set the width of input fields to 80% */
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Button styling */
+button {
+  width: 80%; /* Set the width of the button to 80% */
+  background-color: #ff0088;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #ff0088;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+/* Paragraph and link styling */
+p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+p a {
+  color: #ff0088;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar styles */
+nav {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  position: fixed; /* Make the navbar fixed at the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it stays on top of other content */
+  display: flex;
+  justify-content: space-between; /* Space out the items */
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  gap: 15px; /* Space between the links */
+}
+
+nav a {
+  color: white !important; /* Use !important to override other styles */
+  text-decoration: none !important; /* Ensure underlines are removed */
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+nav a:focus,
+nav a:hover {
+  background-color: #ff0088;
+  text-decoration: none !important; /* Remove underline on hover/focus */
+}
+
+/* Heading styles */
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Button styles */
+button {
+  background-color: #ff0088;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff0088;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
